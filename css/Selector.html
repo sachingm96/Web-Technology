@@ -1,65 +1,84 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<title>CSS ex 2 </title>
+
+<meta charest="utf-8">
+<title>combinator selector</title>
 <style type="text/css">
-body{
-background-image: url("https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?cs=srgb&dl=pexels-pixabay-259915.jpg&fm=jpg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: 600px,600px; 
-background-attachment: fixed;
-
-}
-div{
-background-image: url("https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg");
-}
-#firstpara{
-color:black;
-background-color:purple;
-opacity: 1.0;
-}
-$secondpara{
-}
-p{
+#div1>p{ /space , > to represent the child class and parent class/
 color:red;
+background-color:blue;
+
 }
-.classSelector{
-color:orange;
-}
-h2{
+div+h3{  /adjusenct class/
 color:green;
+background-color:yellow;
+
 }
-div.div1{
-color:yellow;
-}
-div,p{
-}
-*{
-color:blue;
-}
+#div1 ~ h3{          /tildo ~ used to select all the h3 tags after the div tag/
+
+color:pink;
+background-color:gray;
+
+}  
+
+a:link {
+color:red;
+
+}      
+
+
 </style>
+
 </head>
-<body bgcolor="MintCream" >  <!-- -->
+<body>
 
-<h1>simple selector</h1>
+<h1>combinator selector</h1>
+<a href="https://raw.githubusercontent.com/xworkzodc/Gallery/master/images/58.jpeg">click here</a>
+<img src="https://youtu.be/MkAlEB98xMU">click here</a>
 
-<p id="firstpara">id</p>
-<p class="classSelector" >class</p>
-<p >tag name</p>
-<p class="classSelector">class 2</p>
-<h3 class="classSelector">class 3</h3>
-<h2> tag 1 </h2>
-<h2> tag 2 </h2>
-<h2> tag 3 </h2>
 
-<div >
-<p class ="div1">para 1 </p>
-<p class="div2">para 2</p>
-<p>para 3</p>
+
+
+<div id="div1">
+
+<p>descendent selector</p>
+<p>descendent selector</p>
+<p>descendent selector</p>
+<div><p>descendent selector</p></div>
+<section><p>descendent selector</p></section>
+<span>descendent selector</span>
+<p>descendent selector</p>
+<p>descendent selector</p>
 
 </div>
+
+<h3>adjucent selector</h3> 
+<h3>general selector</h3>
+
+<div>
+
+<p>descendent selector</p>
+<p>descendent selector</p>
+<p>descendent selector</p>
+<div><p>descendent selector</p></div>
+<span><p>descendent selector</p></span>
+<span>descendent selector</span>
+
+</div>
+
+<h3>general selector</h3>
+<p>genaral selector</p>
+<h3>general selector</h3>
+<h3>general selector</h3>
+<p>genaral selector</p>
+<p>genaral selector</p>
+
+<h3>general selector</h3>
+<h3>general selector</h3>
+
+
+
 
 </body>
 </html>
