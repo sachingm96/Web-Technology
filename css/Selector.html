@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charest="utf-8">
+<title>combinator selector</title>
+<style>
+div p {
+color:red;
+ background-color: pink;
+}
+#div2 >p{
+  background-color: yellow;
+  }
+#div3 + p {
+  background-color: orange;
+  }
+#div4 ~ p {
+  background-color: blue;
+}
+
+a:link{
+color:blue;
+}
+a:hover{
+color:orange;
+}
+</style>
+</head>
+<body>
+<a href="https://www.instagram.com/sachin_jimmy_/">Click here </a>
+<h1>Descendant Selector</h1>
+
+<div>
+  <p>Paragraph 1 </p>
+  <p>Paragraph 2 </p>
+  <section><p>Paragraph 3</p></section>
+</div>
+
+<p>Paragraph 4</p>
+<p>Paragraph 5</p>
+
+
+<h2>Child Selector</h2>
+
+<div id="div2">
+  <p>Paragraph 1 </p>
+  <p>Paragraph 2 </p>
+  <section><p>Paragraph 3 Descendant</p></section>
+</div>
+
+<p>Paragraph 4</p>
+<p>Paragraph 5</p>
+
+<h2>adjacent Selector</h2>
+
+<div id="div3">
+  <p>Paragraph 1.</p>
+  <p>Paragraph 2.</p>
+</div>
+<p>Paragraph 3</p>
+<p>Paragraph 4</p>
+
+<div id="div3">
+  <p>Paragraph 5 </p>
+</div>
+
+<h2>general Selector</h2>
+<div id="div4">
+  <p>Paragraph 1.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<h6> hello </h6>
+<p>Paragraph 4.</p>
+
+</body>
+</html>

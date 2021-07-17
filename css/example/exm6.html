@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> example text </title>
+<style type="text/css">
+h1{
+text-align:center; /*right,left*/
+text-decoration: underline; /*line-through, overline*/
+text-transform: uppercase;
+color:red;
+text-shadow: 5px 5px 5px darkred;
+background-color: orange;
+
+}
+div{
+text-transform: capitalize;
+word-spacing: 2px;
+background-color:mintCream;
+text-indent: 10cm;
+font-family: monospace,cursive,serif;
+font-style: italic;
+font-weight: 800;/*bold,bolder*/
+font-size: 30px;
+white-space:5px;
+}
+div::first-letter{
+font-size: 25px;
+color:red;
+}
+div::first-line{
+font-size: 25px;
+color:blue;
+}
+div::selection{
+background-color:yellow;
+color:pink;
+}
+h3::after{
+content: "- by Sachin";
+}
+h3::before{
+content: url("https://www.gannett-cdn.com/presto/2018/11/01/USAT/788eaad4-8c20-4a46-92ff-f6df41d4813d-DrunkEmoji3110.jpg?crop=871,644,x28,y0&quality=50&width=640 ");
+}
+</style>
+</head>
+<body >
+<h1> Hai Frndz </h1>
+<div>
+<p> Notice the double colon notation - ::first-line versus :first-line
+The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.
+For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.</p>
+</div>
+
+<h3> hai frndz </h3>
+<h3> hai frndz </h3>
+<h3> hai frndz </h3>
+<h3> hai frndz </h3>
+
+</body>
+</html>

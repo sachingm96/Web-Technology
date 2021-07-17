@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charest="utf-8">
+<title>combinator selector</title>
+<style type="text/css">
+#div1>p{ /space , > to represent the child class and parent class/
+color:red;
+background-color:blue;
+
+}
+div+h3{  /adjusenct class/
+color:green;
+background-color:yellow;
+
+}
+#div1 ~ h3{          /tildo ~ used to select all the h3 tags after the div tag/
+
+color:pink;
+background-color:gray;
+
+}  
+
+a:link {
+color:red;
+
+}      
+
+
+</style>
+
+</head>
+<body>
+
+<h1>combinator selector</h1>
+<a href="https://raw.githubusercontent.com/xworkzodc/Gallery/master/images/58.jpeg">click here</a>
+<img src="https://youtu.be/MkAlEB98xMU">click here</a>
+
+
+
+
+<div id="div1">
+
+<p>descendent selector</p>
+<p>descendent selector</p>
+<p>descendent selector</p>
+<div><p>descendent selector</p></div>
+<section><p>descendent selector</p></section>
+<span>descendent selector</span>
+<p>descendent selector</p>
+<p>descendent selector</p>
+
+</div>
+
+<h3>adjucent selector</h3> 
+<h3>general selector</h3>
+
+<div>
+
+<p>descendent selector</p>
+<p>descendent selector</p>
+<p>descendent selector</p>
+<div><p>descendent selector</p></div>
+<span><p>descendent selector</p></span>
+<span>descendent selector</span>
+
+</div>
+
+<h3>general selector</h3>
+<p>genaral selector</p>
+<h3>general selector</h3>
+<h3>general selector</h3>
+<p>genaral selector</p>
+<p>genaral selector</p>
+
+<h3>general selector</h3>
+<h3>general selector</h3>
+
+
+
+
+</body>
+</html>
